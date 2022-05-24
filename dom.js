@@ -3,7 +3,8 @@
 //var header=document.getElementById('header-title');
 //header.style.color='blue';
 //console.log(header);
-//
+
+//getElementsByClassName
 var item=document.getElementsByClassName('list-group-item');
 //console.log(item);
 //item[1].textContent='Hello';
@@ -15,3 +16,7 @@ item[0].style.fontWeight='bold';
 item[1].style.fontWeight='bold';
 item[2].style.fontWeight='bold';
 item[3].style.fontWeight='bold';
+
+//getElementsByTagName
+var ite=document.getElementsByTagName('li');
+ite[4].textContent='hello jani';
