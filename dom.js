@@ -39,9 +39,9 @@ var divtext=document.createTextNode('HELLo world');
 //add text to div
 
 newdiv.style.fontSize='30px';
+newdiv.appendChild(divtext);
 console.log(newdiv);
 
-newdiv.appendChild(divtext);
 //push element to DOM 
 var container=document.querySelector('header .container');
 var before1=document.querySelector('header h1');
@@ -50,10 +50,13 @@ container.insertBefore(newdiv,before1);
 //push element before item1
 //var parnode=document.getelementById('items');
 var chlnode=document.createElement('li');
+chlnode.className='list-group-item';
 var txt=document.createTextNode('hello world');
 chlnode.appendChild(txt);
 console.log(chlnode);
-var path=document.getElementsByClassName('list-group-item');
+
+var list=document.querySelector('#items');
+list.insertBefore(chlnode,list.children[0]);
 
 //parentnode.appendfirstChild(chlnode);
 
